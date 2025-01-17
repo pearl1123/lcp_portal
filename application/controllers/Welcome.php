@@ -11,8 +11,10 @@ class Welcome extends CI_Controller {
 		$data = array(
             'csrf' => $this->csrf()
         );
-
+		$this->load->view('header');
 		$this->load->view('welcome_message',$data);
+		$this->load->view('footer');
+		$this->load->view('modal_login',$data);
 		$this->load->view('modal_register',$data);
 	}
 
@@ -38,8 +40,5 @@ class Welcome extends CI_Controller {
 			'password' => md5($password)
 		);
 		$res = $uModel->registerUser($data);
-
-		
-
 	}
 }

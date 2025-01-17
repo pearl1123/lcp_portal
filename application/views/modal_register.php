@@ -13,6 +13,11 @@
 					</div>
 
 					<div class="input-group mb-3">
+						<span class="input-group-text"><i class="fa-regular fa-user"></i><span class = "text-danger">*</span></span>
+						<input type="text" id = "office" name = "office" class="form-control" placeholder="Office" required value="<?php echo set_value('office') ?>" />
+					</div>
+
+					<div class="input-group mb-3">
 						<span class="input-group-text"><i class="fa-solid fa-envelope"></i><span class = "text-danger">*</span></span>
 						<input type="email" id = "email" name = "email" class="form-control" placeholder="Email" required value="<?php echo set_value('email') ?>" />
 					</div>
@@ -25,13 +30,13 @@
 					<div class="input-group mb-3">
 						<span class="input-group-text"><i class="fa-solid fa-lock"></i><span class = "text-danger">*</span></span>
 						<input type="password" id = "passwordReg" autocomplete = "off" name = "passwordReg" class="form-control" placeholder="Password" required/>
-						<button class="btn btn-outline-secondary" onclick="showPasswordReg()" type="button" id="inputGroupFileAddon04"><i class="fa-solid fa-eye"></i></button>
+						<button class="btn btn-outline-secondary" onclick="showPasswordReg()" type="button"><i class="fa-solid fa-eye"></i></button>
 					</div>
 
 					<div class="input-group mb-3">
 						<span class="input-group-text"><i class="fa-solid fa-lock"></i><span class = "text-danger">*</span></span>
-						<input type="password" id = "confirm_password" autocomplete = "off" name = "confirm_password" class="form-control" placeholder="Re-enters password" required/>
-						<button class="btn btn-outline-secondary" onclick="showPasswordRegConfirm()" type="button" id="inputGroupFileAddon04"><i class="fa-solid fa-eye"></i></button>
+						<input type="password" id = "confirm_password" autocomplete = "off" name = "confirm_password" class="form-control" placeholder="Re-enter Password" required/>
+						<button class="btn btn-outline-secondary" onclick="showPasswordRegConfirm()" type="button"><i class="fa-solid fa-eye"></i></button>
 					</div>
 				</div>
 				<div class="modal-footer">
